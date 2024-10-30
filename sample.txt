@@ -1,0 +1,23 @@
+seanglay-god/
+├── src/
+│   ├── main.rs            # Entry point for the application
+│   ├── routes/            # Defines the route handlers and endpoint setup
+│   │   ├── mod.rs         # Module declaration for the routes
+│   │   ├── user_routes.rs # Example route handler for "user" related operations
+│   ├── handlers/          # Contains request handlers, similar to controllers
+│   │   ├── mod.rs         # Module declaration for handlers
+│   │   ├── user_handler.rs # Example handler logic for user-related endpoints
+│   ├── services/          # Business logic layer, processing and managing data
+│   │   ├── mod.rs         # Module declaration for services
+│   │   └── user_service.rs # Example service for user-related logic
+│   ├── models/            # Defines structs representing data models
+│   │   ├── mod.rs         # Module declaration for models
+│   │   └── user.rs        # Example struct for user data model
+│   ├── repositories/      # Data access layer for DB interactions (optional)
+│   │   ├── mod.rs         # Module declaration for repositories
+│   │   └── user_repo.rs   # Example repository for user-related DB operations
+│   ├── utils/             # Utility functions (e.g., for error handling, parsing)
+│   └── config.rs          # Application configuration (e.g., environment variables)
+├── Cargo.toml             # Defines dependencies and project metadata
+├── Dockerfile             # Docker configuration for containerizing the service
+└── README.md              # Documentation for the service
